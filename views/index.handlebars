@@ -12,7 +12,11 @@
                 <li> 
                   <div>
                     <h2><a href="{{this.link}}">{{this.title}}</a></h2>
-                    <div><h2>{{this.notes.title}}</h2></div>
+                    {{#if this.collection}}
+                        {{#each this.collection}}
+                            <div><h2>Hello</h2></div>
+                        {{/each}}
+                    {{/if}}
                     {{>notes}}
                   </div> 
                 </li>
